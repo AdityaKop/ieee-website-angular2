@@ -15,7 +15,8 @@ var AnnouncementsComponent = (function () {
     AnnouncementsComponent = __decorate([
         core_1.Component({
             selector: 'my-announcements',
-            template: "\n    Announcement Template\n    "
+            templateUrl: 'templates/announcements.component.html',
+            styleUrls: ['styles/announcements.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AnnouncementsComponent);

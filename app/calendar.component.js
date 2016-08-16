@@ -15,7 +15,8 @@ var CalendarComponent = (function () {
     CalendarComponent = __decorate([
         core_1.Component({
             selector: 'my-calendar',
-            template: "\n    Calendar Template\n    "
+            templateUrl: 'templates/calendar.component.html',
+            styleUrls: ['styles/calendar.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], CalendarComponent);

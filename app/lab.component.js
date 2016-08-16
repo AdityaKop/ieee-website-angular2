@@ -15,7 +15,8 @@ var LabComponent = (function () {
     LabComponent = __decorate([
         core_1.Component({
             selector: 'my-lab',
-            template: "\n    Lab Template\n    "
+            templateUrl: 'templates/lab.component.html',
+            styleUrls: ['styles/lab.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], LabComponent);

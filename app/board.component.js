@@ -15,7 +15,8 @@ var BoardComponent = (function () {
     BoardComponent = __decorate([
         core_1.Component({
             selector: 'my-board',
-            template: "\n    Board Template\n    <ul class='hoverbox'>\n      <li>\n        <a>\n          <img src='http://science-all.com/images/wallpapers/profile-pics/profile-pics-19.jpg'>\n          <img src='http://science-all.com/images/wallpapers/profile-pics/profile-pics-19.jpg' class='preview'>\n        </a>\n      </li>\n    </ul>\n    "
+            templateUrl: 'templates/board.component.html',
+            styleUrls: ['styles/board.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], BoardComponent);

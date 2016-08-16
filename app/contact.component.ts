@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-contact',
-  template: `
-    Contact Template
-    `
+  templateUrl: 'templates/contact.component.html',
+  styleUrls: ['styles/contact.component.css']
 })
+
 export class ContactComponent {
   
 }
