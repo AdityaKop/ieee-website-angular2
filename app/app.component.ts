@@ -5,19 +5,7 @@ import { ROUTER_DIRECTIVES }  from '@angular/router';
 
 @Component({
   selector: 'my-app',
-
-  template: `
-    <h1>{{title}}</h1>
-    <nav>
-      <a [routerLink]="['/announcements']" routerLinkActive="active">Announcements</a>
-      <a [routerLink]="['/calendar']" routerLinkActive="active">Calendar</a>
-      <a [routerLink]="['/lab']" routerLinkActive="active">Lab Info</a>
-      <a [routerLink]="['/about']" routerLinkActive="active">About Us</a>
-      <a [routerLink]="['/board']" routerLinkActive="active">Board</a>
-      <a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a>
-    </nav>
-    <router-outlet></router-outlet>
-  `,
+  templateUrl: 'templates/app.component.html',
   styleUrls: ['styles/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
