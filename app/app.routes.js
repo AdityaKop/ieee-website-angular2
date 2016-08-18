@@ -1,5 +1,6 @@
 "use strict";
 var router_1 = require('@angular/router');
+var home_component_1 = require('./home.component');
 var announcements_component_1 = require('./announcements.component');
 var calendar_component_1 = require('./calendar.component');
 var lab_component_1 = require('./lab.component');
@@ -9,8 +10,12 @@ var contact_component_1 = require('./contact.component');
 var routes = [
     {
         path: '',
-        redirectTo: '/announcements',
+        redirectTo: '/home',
         pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: home_component_1.HomeComponent
     },
     {
         path: 'announcements',

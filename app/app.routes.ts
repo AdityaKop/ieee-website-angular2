@@ -1,5 +1,6 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 
+import { HomeComponent }          from './home.component';
 import { AnnouncementsComponent } from './announcements.component';
 import { CalendarComponent }      from './calendar.component';
 import { LabComponent }           from './lab.component';
@@ -10,8 +11,12 @@ import { ContactComponent }       from './contact.component';
 const routes: RouterConfig = [
   {
     path: '',
-    redirectTo: '/announcements',
+    redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   },
   {
     path: 'announcements',
