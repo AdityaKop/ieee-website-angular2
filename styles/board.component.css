@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:900,300);
+body {
+    background-color: #66B2FF;
+    font-family: roboto;
+}
+
+.container {
+    width: auto;
+    margin: 120px 5vw 120px;
+    background-color: #fff;
+    padding: 0 20px 20px;
+    border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+        -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+        -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    text-align: center;
+}
+.container:hover .avatar-flip {
+    transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+}
+
+.container:hover .avatar-flip img {
+    filter: grayscale(0%) brightness(100%);
+        -webkit-filter: grayscale(0%) brightness(100%);
+}
+
+.avatar-flip {
+    border-radius: 100px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: auto;
+    top: -60px;
+    transition: all 0.8s ease-in-out;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+    box-shadow: 0 0 0.2px 13px #66B2FF;
+        -webkit-box-shadow: 0 0 0.2px 13px #66B2FF;
+        -moz-box-shadow: 0 0 0.2px 13px #66B2FF;
+}
+
+.avatar-flip img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+    transition: all 0.8s ease-in-out;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;*/
+    filter: grayscale(80%) brightness(90%);
+    -webkit-filter: grayscale(80%) brightness(90%);
+}
+
+.shade {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+    box-shadow: 0 0 5px 1px #66B2FF inset;
+        -webkit-box-shadow: 0 0 5px 1px #66B2FF inset;
+        -moz-box-shadow: 0 0 5px 1px #66B2FF inset;
+    z-index: 5
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+h4 {
+    font-size: 14px;
+    /*color: #00baff;*/
+    color: #3399FF;
+    letter-spacing: 1px;
+    margin-bottom: 25px
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #666;
+}
