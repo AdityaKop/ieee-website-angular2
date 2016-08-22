@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
+<!-- h1>{{title}}</h1>
     <nav>
       <a [routerLink]="['/announcements']" routerLinkActive="active">Announcements</a>
       <a [routerLink]="['/calendar']" routerLinkActive="active">Calendar</a>
@@ -7,4 +7,34 @@
       <a [routerLink]="['/board']" routerLinkActive="active">Board</a>
       <a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a>
     </nav>
-    <router-outlet></router-outlet>
+    <router-outlet></router-outlet -->
+<div class="social">
+	<i aria-hidden class="fa fa-twitter"></i>
+	<i aria-hidden class="fa fa-facebook"></i>
+</div>
+<div class="row"> 
+<div id="navArea" class="col s12 m1 l1">
+	<div class="navWrapper">
+		<div class="navCon">
+			<a [routerLink]="['/home']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-home fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/lab']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-map-marker fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/board']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-user fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/calendar']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-ticket fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			
+			<i aria-hidden class="fa fa-heart fa-2x">
+		</i>  </div>
+	</div>
+</div>
+<router-outlet></router-outlet>

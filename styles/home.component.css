@@ -1,0 +1,72 @@
+#contentArea {
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+    float: none; 
+}
+
+.logo-wrapper img {
+    display: inline;
+    margin-right: 1rem;
+    vertical-align: middle; 
+}
+
+@media screen and (min-width: 360px) {
+    .logo-wrapper img {
+        width: 3rem; 
+    } 
+}
+
+@media screen and (min-width: 601px) {
+    .logo-wrapper img {
+        width: 5rem; 
+    } 
+}
+
+.logo-wrapper b {
+    display: inline;
+    font-size: 3rem;
+    color: white;
+    vertical-align: middle; 
+}
+
+@media screen and (min-width: 601px) {
+    .logo-wrapper b {
+        font-size: 5rem; 
+    } 
+}
+
+.logo-wrapper {
+    display: block;
+    z-index: 7;
+    position: absolute;
+    width: 220px;
+    top: 20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0; 
+}
+
+@media screen and (min-width: 601px) {
+    .logo-wrapper {
+        top: 40%;
+        width: 390px; 
+    } 
+}
+
+.slides li {
+    background: black; 
+}
+
+.slider, .slides, li {
+    height: 100vh !important; 
+}
+
+.slider .slides img {
+    opacity: 0.3; 
+}
+
+.slides .caption {
+    top: unset !important;
+    bottom: 10% !important; 
+}

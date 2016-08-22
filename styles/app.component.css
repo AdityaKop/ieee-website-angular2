@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
   font-size: 1.2em;
   color: #999;
   margin-bottom: 0;
@@ -25,4 +25,94 @@ nav a:hover {
 }
 nav a.active {
   color: #039be5;
+}*/
+
+
+
+.social {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    color: white; 
+}
+
+.social i:first-child {
+    margin-right: 20px; 
+}
+
+@media screen and (min-width: 601px) {
+    .social {
+        left: unset;
+        bottom: unset;
+        top: 0;
+        right: 0; 
+    } 
+}
+
+.navWrapper {
+    width: 260px;
+    margin: 0 auto; 
+}
+
+@media screen and (min-width: 360px) {
+    .navWrapper {
+        width: 350px; 
+    } 
+}
+
+@media screen and (min-width: 601px) {
+    .navWrapper {
+        display: inline; 
+    } 
+}
+
+.navCon {
+    display: inline-block;
+    padding: 10px 10px; 
+}
+
+@media screen and (min-width: 360px) {
+    .navCon {
+        padding: 10px 21px; 
+    } 
+}
+
+@media screen and (min-width: 414px) {
+    .navCon {
+        padding: 10px 21px; 
+    } 
+}
+
+@media screen and (min-width: 601px) {
+    .navCon {
+        display: block;
+        padding: 10px 10px;
+        text-align: center; 
+    } 
+}
+
+#navArea {
+    z-index: 5;
+    background-color: #006699;
+    position: fixed;
+    padding: 0; 
+}
+
+@media screen and (min-width: 601px) {
+    #navArea {
+        position: static;
+        height: 100vh; 
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    #navArea {
+        width: 80px; 
+    } 
+}
+
+.row {
+    margin-bottom: 0; 
 }

@@ -1,3 +1,4 @@
+/// <reference path="../typings/globals/jquery/index.d.ts"/>
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12,6 +13,14 @@ var core_1 = require('@angular/core');
 var HomeComponent = (function () {
     function HomeComponent() {
     }
+    HomeComponent.prototype.ngAfterContentInit = function () {
+        $(document).ready(function () {
+            $('.slider')['slider']({
+                full_width: true,
+                indicators: false,
+            });
+        });
+    };
     HomeComponent = __decorate([
         core_1.Component({
             selector: 'my-home',
