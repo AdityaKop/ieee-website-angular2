@@ -52,7 +52,7 @@
     border-radius: 100px;
     transition: all 0.8s ease-in-out;
         -webkit-transition: all 0.8s ease-in-out;
-        -moz-transition: all 0.8s ease-in-out;*/
+        -moz-transition: all 0.8s ease-in-out;
     filter: grayscale(80%) brightness(90%);
     -webkit-filter: grayscale(80%) brightness(90%);
 }
