@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:900,300);
-body {
+.boardPage {
     background-color: #66B2FF;
     font-family: roboto;
+    border-top: 1px solid #66B2FF;
+    border-bottom: 1px solid #66B2FF;
 }
 
 .container {
