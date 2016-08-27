@@ -6,7 +6,7 @@ var calendar_component_1 = require('./calendar.component');
 var lab_component_1 = require('./lab.component');
 var about_component_1 = require('./about.component');
 var board_component_1 = require('./board.component');
-var contact_component_1 = require('./contact.component');
+var sponsors_component_1 = require('./sponsors.component');
 var routes = [
     {
         path: '',
@@ -38,8 +38,8 @@ var routes = [
         component: board_component_1.BoardComponent
     },
     {
-        path: 'contact',
-        component: contact_component_1.ContactComponent
+        path: 'sponsors',
+        component: sponsors_component_1.SponsorsComponent
     }
 ];
 exports.appRouterProviders = [

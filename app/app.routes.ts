@@ -6,7 +6,7 @@ import { CalendarComponent }      from './calendar.component';
 import { LabComponent }           from './lab.component';
 import { AboutComponent }         from './about.component';
 import { BoardComponent }         from './board.component';
-import { ContactComponent }       from './contact.component';
+import { SponsorsComponent }       from './sponsors.component';
 
 const routes: RouterConfig = [
   {
@@ -39,8 +39,8 @@ const routes: RouterConfig = [
     component: BoardComponent
   },
   {
-    path: 'contact',
-    component: ContactComponent
+    path: 'sponsors',
+    component: SponsorsComponent
   }
 ];
 

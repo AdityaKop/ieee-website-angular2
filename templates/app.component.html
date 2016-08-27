@@ -1,13 +1,3 @@
-<!-- h1>{{title}}</h1>
-    <nav>
-      <a [routerLink]="['/announcements']" routerLinkActive="active">Announcements</a>
-      <a [routerLink]="['/calendar']" routerLinkActive="active">Calendar</a>
-      <a [routerLink]="['/lab']" routerLinkActive="active">Lab Info</a>
-      <a [routerLink]="['/about']" routerLinkActive="active">About Us</a>
-      <a [routerLink]="['/board']" routerLinkActive="active">Board</a>
-      <a [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a>
-    </nav>
-    <router-outlet></router-outlet -->
 <div class="social">
 	<i aria-hidden class="fa fa-twitter"></i>
 	<i aria-hidden class="fa fa-facebook"></i>
@@ -20,21 +10,29 @@
 			<i aria-hidden class="fa fa-home fa-2x">
 			</i></a></div>
 		<div class="navCon">
+			<a [routerLink]="['/announcements']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-bullhorn fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/calendar']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-calendar-o fa-2x">
+			</i></a></div>
+		<div class="navCon">
+			<a [routerLink]="['/board']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-users fa-2x">
+			</i></a></div>
+		<div class="navCon">
+            <a [routerLink]="['/sponsors']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-briefcase fa-2x">
+            </i></a></div>
+		<div class="navCon">
 			<a [routerLink]="['/lab']" routerLinkActive="active">
 			<i aria-hidden class="fa fa-map-marker fa-2x">
 			</i></a></div>
 		<div class="navCon">
-			<a [routerLink]="['/board']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-user fa-2x">
+			<a [routerLink]="['/about']" routerLinkActive="active">
+			<i aria-hidden class="fa fa-info-circle fa-2x">
 			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/calendar']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-ticket fa-2x">
-			</i></a></div>
-		<div class="navCon">
-                        <a [routerLink]="['/announcements']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-heart fa-2x">
-                        </i></a></div>
 	</div>
 </div>
 <div style="height:100%; overflow:auto; width:auto;">
