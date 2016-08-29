@@ -1,5 +1,3 @@
-/// <reference path="../typings/globals/jquery/index.d.ts"/>
-
 import { Component }            from '@angular/core';
 
 @Component({
@@ -11,10 +9,10 @@ import { Component }            from '@angular/core';
 export class HomeComponent {
   ngAfterContentInit() {
     $(document).ready(function(){
-      $('.slider')['slider']({
+      $('.slider').slider(/*{
         full_width: true,
         indicators: false,                  
-      })
+      }*/)
     });
   }
 }

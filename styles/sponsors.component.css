@@ -1,0 +1,13 @@
+#sponsors {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  height: auto;
+}
+
+#sponsors img {
+  width: 100%;
+  opacity: 0;
+  display: block;
+  margin-bottom: 100px;
+}

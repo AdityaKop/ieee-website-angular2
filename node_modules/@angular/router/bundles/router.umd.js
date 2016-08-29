@@ -1969,7 +1969,9 @@ var __extends = (this && this.__extends) || function (d, b) {
                     return _this.runCanActivate(s.route);
                 }
                 else if (s instanceof CanDeactivate) {
-                    return _this.runCanDeactivate(s.component, s.route);
+                    // workaround https://github.com/Microsoft/TypeScript/issues/7271
+                    var s2 = s;
+                    return _this.runCanDeactivate(s2.component, s2.route);
                 }
                 else {
                     throw new Error('Cannot be reached');
@@ -2234,9 +2236,6 @@ var __extends = (this && this.__extends) || function (d, b) {
         return outlet;
     }
     var RouterLink = (function () {
-        /**
-         * @internal
-         */
         function RouterLink(router, route, locationStrategy) {
             this.router = router;
             this.route = route;
@@ -2342,9 +2341,6 @@ var __extends = (this && this.__extends) || function (d, b) {
         'onClick': [{ type: _angular_core.HostListener, args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey'],] },],
     };
     var RouterLinkActive = (function () {
-        /**
-         * @internal
-         */
         function RouterLinkActive(router, element, renderer) {
             var _this = this;
             this.router = router;
@@ -2462,8 +2458,13 @@ var __extends = (this && this.__extends) || function (d, b) {
             catch (e) {
                 if (!(e instanceof _angular_core.NoComponentFactoryError))
                     throw e;
-                var componentName = component ? component.name : null;
-                console.warn("'" + componentName + "' not found in precompile array.  To ensure all components referred to by the RouterConfig are compiled, you must add '" + componentName + "' to the 'precompile' array of your application component. This will be required in a future release of the router.");
+                // TODO: vsavkin uncomment this once CompoentResolver is deprecated
+                // const componentName = component ? component.name : null;
+                // console.warn(
+                //     `'${componentName}' not found in precompile array.  To ensure all components referred
+                //     to by the RouterConfig are compiled, you must add '${componentName}' to the
+                //     'precompile' array of your application component. This will be required in a future
+                //     release of the router.`);
                 factory = snapshot._resolvedComponentFactory;
             }
             var inj = _angular_core.ReflectiveInjector.fromResolvedProviders(providers, this.location.parentInjector);
