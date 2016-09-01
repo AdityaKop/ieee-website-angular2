@@ -19,6 +19,7 @@
         -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
     text-align: center;
 }
+
 .container:hover .avatar-flip {
     transform: rotateY(360deg);
         -webkit-transform: rotateY(360deg);
