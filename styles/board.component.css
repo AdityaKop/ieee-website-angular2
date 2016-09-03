@@ -1,13 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:900,300);
-.boardPage {
-    background-color: #66B2FF;
-    font-family: roboto;
-    border-top: 1px solid #66B2FF;
-    border-bottom: 1px solid #66B2FF;
-    width: auto;
-}
-
 /* Add screen size checks to make the cards center horizontally when large and leave padding when small */
+
 .container {
     width: auto;
     margin: 120px 5vw 120px;
@@ -80,13 +72,14 @@ h2 {
     margin-top: 0px;
     color: #333;
 }
+
 h4 {
     font-size: 14px;
-    /*color: #00baff;*/
     color: #3399FF;
     letter-spacing: 1px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
+
 p {
     font-size: 16px;
     line-height: 26px;
