@@ -7,6 +7,7 @@ var lab_component_1 = require('./lab.component');
 var about_component_1 = require('./about.component');
 var board_component_1 = require('./board.component');
 var sponsors_component_1 = require('./sponsors.component');
+var contact_component_1 = require('./contact.component');
 var routes = [
     {
         path: '',
@@ -40,6 +41,10 @@ var routes = [
     {
         path: 'sponsors',
         component: sponsors_component_1.SponsorsComponent
+    },
+    {
+        path: 'contact',
+        component: contact_component_1.ContactComponent
     }
 ];
 exports.appRouterProviders = [
