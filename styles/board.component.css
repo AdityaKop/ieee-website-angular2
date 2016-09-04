@@ -65,6 +65,23 @@
     z-index: 5
 }
 
+.topc {
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 601px) {
+    .topc {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (min-width: 1501px) {
+    .container {
+        margin: 120px auto 120px;
+        padding: 0 20px 20px;
+    }
+}
+
 h2 {
     font-size: 32px;
     font-weight: 600;
