@@ -1,6 +1,6 @@
 .container {
   width: auto;
-  margin: 50px 5vw 80px;
+  margin: 50px 5vw 50px;
   background-color: #fff;
   padding: 0 20px 20px;
   border-radius: 6px;
@@ -12,26 +12,20 @@
   text-align: center;
 }
 
-top {
-  margin-top: 130px;
+.topc {
+    margin-top: 130px;
 }
 
 @media screen and (min-width: 601px) {
-  top {
-    margin-top: 150px;
-  }
-}
-
-@media screen and (mid-width: 1001px) {
-  iframe {
-    height: 90%;
-  }
+    .topc {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (min-width: 1501px) {
-  .container {
-    margin: 50px auto 80px;
-  }
+    .container {
+        margin: 50px auto 80px;
+    }
 }
 
 h2 {
@@ -43,7 +37,6 @@ h2 {
 
 h4 {
   font-size: 14px;
-  /*color: #00baff;*/
   color: #3399FF;
   letter-spacing: 1px;
   margin-bottom: 25px;
@@ -54,8 +47,4 @@ p {
   line-height: 26px;
   margin-bottom: 20px;
   color: #666;
-}
-
-iframe {
-  margin-top: 1%;
 }
