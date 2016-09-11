@@ -1,15 +1,15 @@
 .container {
-  width: auto;
-  margin: 50px 5vw 50px;
-  background-color: #fff;
-  padding: 0 20px 20px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
-  text-align: center;
+    width: auto;
+    margin: 50px 5vw 50px;
+    background-color: #fff;
+    padding: 0 20px 20px;
+    border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+        -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+        -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    text-align: center;
 }
 
 .topc {
@@ -29,22 +29,22 @@
 }
 
 h2 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #333;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 h4 {
-  font-size: 14px;
-  color: #3399FF;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
+    font-size: 14px;
+    color: #3399FF;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
 }
 
 p {
-  font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 20px;
-  color: #666;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #666;
 }

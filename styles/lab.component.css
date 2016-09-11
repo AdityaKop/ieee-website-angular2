@@ -37,7 +37,6 @@ h2 {
 
 h4 {
     font-size: 14px;
-    /*color: #00baff;*/
     color: #3399FF;
     letter-spacing: 1px;
     margin-bottom: 25px;
@@ -49,15 +48,3 @@ p {
     margin-bottom: 20px;
     color: #666;
 }
-
-.video-container {
-  margin-top: 5%; }
-
-#mapDescription {
-  margin-top: 5%;
-}
-
-.ieee-blue {
-  background-color: #006699; }
-
-/*# sourceMappingURL=map.css.map */

@@ -1,5 +1,3 @@
-/* Add screen size checks to make the cards center horizontally when large and leave padding when small */
-
 .container {
     width: auto;
     margin: 120px 5vw 120px;
@@ -35,9 +33,9 @@
     transition: all 0.8s ease-in-out;
         -webkit-transition: all 0.8s ease-in-out;
         -moz-transition: all 0.8s ease-in-out;
-    box-shadow: 0 0 0.2px 13px #66B2FF;
-        -webkit-box-shadow: 0 0 0.2px 13px #66B2FF;
-        -moz-box-shadow: 0 0 0.2px 13px #66B2FF;
+    box-shadow: 0 0 0.2px 13px #009FDA;
+        -webkit-box-shadow: 0 0 0.2px 13px #009FDA;
+        -moz-box-shadow: 0 0 0.2px 13px #009FDA;
 }
 
 .avatar-flip img {
@@ -50,19 +48,6 @@
         -moz-transition: all 0.8s ease-in-out;
     filter: grayscale(80%) brightness(90%);
     -webkit-filter: grayscale(80%) brightness(90%);
-}
-
-.shade {
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    left: 0;
-    top: 0;
-    border-radius: 100px;
-    box-shadow: 0 0 5px 1px #66B2FF inset;
-        -webkit-box-shadow: 0 0 5px 1px #66B2FF inset;
-        -moz-box-shadow: 0 0 5px 1px #66B2FF inset;
-    z-index: 5
 }
 
 .topc {
