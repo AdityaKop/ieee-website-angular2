@@ -2,6 +2,7 @@
   "name": "ieee-website",
   "version": "1.0.0",
   "scripts": {
+    "serve": "lite-server -c prod-config.json",
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
