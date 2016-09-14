@@ -13,22 +13,26 @@
     color: #66B2FF;
 }
 
+.a:active {
+    text-color: black;
+}
+
 .navWrapper {
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
     text-align: center;
 }
 
 .navCon {
     display: inline-block;
-    padding: 10px 21px; 
+    padding: 10px 15px; 
 }
 
 #navArea {
     z-index: 5;
     background-color: #006699;
     position: fixed;
-    padding: 0; 
+    padding: 0;
 }
 
 .row {
@@ -56,9 +60,3 @@
         width: 70px;
     }
 }
-
-/*@media screen and (min-width: 1001px) {
-    #navArea {
-        width: 80px; 
-    } 
-}*/
