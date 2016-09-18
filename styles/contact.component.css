@@ -54,3 +54,12 @@ p {
     margin-bottom: 20px;
     color: #666;
 }
+
+a {
+    color: #009FDA;
+}
+
+a:hover {
+    color: #006699;
+    text-decoration: underline;
+}
