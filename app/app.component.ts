@@ -16,5 +16,5 @@ import { ROUTER_DIRECTIVES }  from '@angular/router';
   ]
 })
 export class AppComponent {
-  title = 'IEEE @ UCI';  // Create banner image later
+  title = 'IEEE UCI';  // Create banner image later
 }

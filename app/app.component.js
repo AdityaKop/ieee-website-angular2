@@ -15,7 +15,7 @@ var router_1 = require('@angular/router');
 // Provider imports go here later
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'IEEE @ UCI'; // Create banner image later
+        this.title = 'IEEE UCI'; // Create banner image later
     }
     AppComponent = __decorate([
         core_1.Component({
