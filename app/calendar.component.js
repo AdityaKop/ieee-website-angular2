@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var CalendarComponent = (function () {
     function CalendarComponent() {
     }
-    CalendarComponent = __decorate([
-        core_1.Component({
-            selector: 'my-calendar',
-            templateUrl: 'templates/calendar.component.html',
-            styleUrls: ['styles/calendar.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CalendarComponent);
     return CalendarComponent;
 }());
+CalendarComponent = __decorate([
+    core_1.Component({
+        selector: 'my-calendar',
+        templateUrl: 'templates/calendar.component.html',
+        styleUrls: ['styles/calendar.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], CalendarComponent);
 exports.CalendarComponent = CalendarComponent;
 //# sourceMappingURL=calendar.component.js.map

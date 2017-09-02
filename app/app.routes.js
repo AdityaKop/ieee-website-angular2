@@ -1,13 +1,13 @@
 "use strict";
-var router_1 = require('@angular/router');
-var home_component_1 = require('./home.component');
-var announcements_component_1 = require('./announcements.component');
-var calendar_component_1 = require('./calendar.component');
-var lab_component_1 = require('./lab.component');
-var about_component_1 = require('./about.component');
-var board_component_1 = require('./board.component');
-var sponsors_component_1 = require('./sponsors.component');
-var contact_component_1 = require('./contact.component');
+var router_1 = require("@angular/router");
+var home_component_1 = require("./home.component");
+var announcements_component_1 = require("./announcements.component");
+var calendar_component_1 = require("./calendar.component");
+var lab_component_1 = require("./lab.component");
+var about_component_1 = require("./about.component");
+var board_component_1 = require("./board.component");
+var sponsors_component_1 = require("./sponsors.component");
+var contact_component_1 = require("./contact.component");
 var routes = [
     {
         path: '',

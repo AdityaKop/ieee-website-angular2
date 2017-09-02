@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var SponsorsComponent = (function () {
     function SponsorsComponent() {
     }
@@ -24,15 +24,15 @@ var SponsorsComponent = (function () {
         ];
         Materialize.scrollFire(options);
     };
-    SponsorsComponent = __decorate([
-        core_1.Component({
-            selector: 'my-sponsors',
-            templateUrl: 'templates/sponsors.component.html',
-            styleUrls: ['styles/sponsors.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], SponsorsComponent);
     return SponsorsComponent;
 }());
+SponsorsComponent = __decorate([
+    core_1.Component({
+        selector: 'my-sponsors',
+        templateUrl: 'templates/sponsors.component.html',
+        styleUrls: ['styles/sponsors.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], SponsorsComponent);
 exports.SponsorsComponent = SponsorsComponent;
 //# sourceMappingURL=sponsors.component.js.map

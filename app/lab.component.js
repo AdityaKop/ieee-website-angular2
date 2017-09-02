@@ -8,19 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var LabComponent = (function () {
     function LabComponent() {
     }
-    LabComponent = __decorate([
-        core_1.Component({
-            selector: 'my-lab',
-            templateUrl: 'templates/lab.component.html',
-            styleUrls: ['styles/lab.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], LabComponent);
     return LabComponent;
 }());
+LabComponent = __decorate([
+    core_1.Component({
+        selector: 'my-lab',
+        templateUrl: 'templates/lab.component.html',
+        styleUrls: ['styles/lab.component.css']
+    }),
+    __metadata("design:paramtypes", [])
+], LabComponent);
 exports.LabComponent = LabComponent;
 //# sourceMappingURL=lab.component.js.map

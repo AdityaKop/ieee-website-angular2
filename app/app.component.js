@@ -10,24 +10,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 // Provider imports go here later
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'IEEE UCI'; // Create banner image later
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'templates/app.component.html',
-            styleUrls: ['styles/app.component.css'],
-            directives: [router_1.ROUTER_DIRECTIVES],
-            providers: []
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        templateUrl: 'templates/app.component.html',
+        styleUrls: ['styles/app.component.css'],
+        directives: [router_1.ROUTER_DIRECTIVES],
+        providers: []
+    }),
+    __metadata("design:paramtypes", [])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
