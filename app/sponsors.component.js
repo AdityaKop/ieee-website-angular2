@@ -18,9 +18,6 @@ var SponsorsComponent = (function () {
             Materialize.fadeInImage(el);
         };
         var options = [
-            { selector: '#blizzard', offset: 0, callback: fadeInImage('#blizzard') },
-            { selector: '#mentor-graphics', offset: 0, callback: fadeInImage('#mentor-graphics') },
-            { selector: '#teradata', offset: 0, callback: fadeInImage('#teradata') },
             { selector: '#studypool', offset: 0, callback: fadeInImage('#studypool') }
         ];
         Materialize.scrollFire(options);
