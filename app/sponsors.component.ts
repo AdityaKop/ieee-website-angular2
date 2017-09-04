@@ -14,7 +14,7 @@ export class SponsorsComponent {
     }
 
     var options = [
-      { selector: '#studypool', offset: 0, callback: fadeInImage('#studypool') }
+//      { selector: '#ieee', offset: 0, callback: fadeInImage('#ieee') }
     ];
 
     Materialize.scrollFire(options);

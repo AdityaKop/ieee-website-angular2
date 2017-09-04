@@ -17,9 +17,7 @@ var SponsorsComponent = (function () {
             console.log(el);
             Materialize.fadeInImage(el);
         };
-        var options = [
-            { selector: '#studypool', offset: 0, callback: fadeInImage('#studypool') }
-        ];
+        var options = [];
         Materialize.scrollFire(options);
     };
     return SponsorsComponent;
