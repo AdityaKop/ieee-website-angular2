@@ -2,13 +2,8 @@
   "name": "ieee-website",
   "version": "1.0.0",
   "scripts": {
-    "serve": "lite-server -c prod-config.json",
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "lite": "lite-server",
-    "postinstall": "typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings"
+    "build": "tsc",
+    "postinstall": "typings install"
   },
   "license": "ISC",
   "dependencies": {
@@ -34,9 +29,6 @@
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "concurrently": "^2.0.0",
-    "ember-cli-materialize": "^0.19.5",
-    "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
   }
