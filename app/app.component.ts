@@ -1,5 +1,5 @@
-/// <reference path="../typings/globals/jquery/index.d.ts"/>
-/// <reference path="../typings/globals/materialize-css/index.d.ts"/>
+/// <reference path="../node_modules/@types/jquery/index.d.ts"/>
+/// <reference path="../node_modules/@types/materialize-css/index.d.ts"/>
 
 import { Component }          from '@angular/core';
 import { ROUTER_DIRECTIVES }  from '@angular/router';

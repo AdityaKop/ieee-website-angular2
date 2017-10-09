@@ -2,8 +2,7 @@
   "name": "ieee-website",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
-    "postinstall": "typings install"
+    "build": "tsc"
   },
   "license": "ISC",
   "dependencies": {
@@ -29,7 +28,11 @@
     "zone.js": "^0.6.12"
   },
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "@types/core-js": "^0.9.43",
+    "@types/jasmine": "^2.6.0",
+    "@types/jquery": "^3.2.13",
+    "@types/materialize-css": "^0.100.0",
+    "@types/node": "^8.0.33",
+    "typescript": "2.4.0"
   }
 }
