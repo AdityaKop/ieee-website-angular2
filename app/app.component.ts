@@ -1,16 +1,9 @@
-/// <reference path="../node_modules/@types/jquery/index.d.ts"/>
-/// <reference path="../node_modules/@types/materialize-css/index.d.ts"/>
-
-import { Component }          from '@angular/core';
-import { ROUTER_DIRECTIVES }  from '@angular/router';
-
-// Provider imports go here later
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
   templateUrl: 'templates/app.component.html',
   styleUrls: ['styles/app.component.css'],
-  directives: [ROUTER_DIRECTIVES],
   providers: [
     // Add providers here later, when drawing from other data sources (ex. announcements)
   ]

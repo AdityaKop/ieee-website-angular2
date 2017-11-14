@@ -7,16 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class SponsorsComponent {
-  ngAfterContentInit() {
-    var fadeInImage = function(el) {
-      console.log(el)
-      Materialize.fadeInImage(el);
-    }
 
-    var options = [
-//      { selector: '#ieee', offset: 0, callback: fadeInImage('#ieee') }
-    ];
-
-    Materialize.scrollFire(options);
-  }
 }

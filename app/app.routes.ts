@@ -1,4 +1,5 @@
-import { provideRouter, RouterConfig }  from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent }          from './home.component';
 import { AnnouncementsComponent } from './announcements.component';
@@ -9,7 +10,7 @@ import { BoardComponent }         from './board.component';
 import { SponsorsComponent }      from './sponsors.component';
 import { ContactComponent }       from './contact.component'; 
 
-const routes: RouterConfig = [
+const appRoutes: Routes = [
   {
     path: '',
     redirectTo: '/home',
@@ -49,6 +50,22 @@ const routes: RouterConfig = [
   }
 ];
 
-export const appRouterProviders = [
-  provideRouter(routes)
-];
+@NgModule({
+  imports: [
+    RouterModule.forRoot(appRoutes)
+  ],
+  exports: [
+    RouterModule
+  ],
+  declarations: [
+    HomeComponent,
+    AnnouncementsComponent,
+    CalendarComponent,
+    LabComponent,
+    AboutComponent,
+    BoardComponent,
+    SponsorsComponent,
+    ContactComponent
+  ]
+})
+export class AppRoutingModule {}

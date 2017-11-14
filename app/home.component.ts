@@ -1,4 +1,5 @@
-import { Component }            from '@angular/core';
+import { Component } from '@angular/core';
+declare var M:any;	//No types for Materialize 1.0.0-alpha.1 yet
 
 @Component({
   selector: 'my-home',
@@ -8,11 +9,6 @@ import { Component }            from '@angular/core';
 
 export class HomeComponent {
   ngAfterContentInit() {
-    $(document).ready(function(){
-      $('.slider').slider(/*{
-        full_width: true,
-        indicators: false,                  
-      }*/)
-    });
+    var slider = new M.Slider(document.querySelector('.slider'));
   }
 }
