@@ -29,7 +29,6 @@ module.exports = {
 			{from: './templates', to: 'templates'},
 			{from: './styles', to: 'styles'},
 			{from: 'node_modules/materialize-css/dist/css/materialize.min.css', to: 'styles'},
-			{from: 'node_modules/materialize-css/dist/fonts', to: 'fonts'},
 			{from: 'node_modules/font-awesome/css/font-awesome.min.css', to: 'styles'},
 			{from: 'node_modules/font-awesome/fonts', to: 'fonts'},
 			{from: 'node_modules/normalize.css/normalize.css', to: 'styles'}
