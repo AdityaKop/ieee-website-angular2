@@ -9,6 +9,7 @@ import { AboutComponent }         from './about.component';
 import { BoardComponent }         from './board.component';
 import { SponsorsComponent }      from './sponsors.component';
 import { ContactComponent }       from './contact.component'; 
+import { ProjectsComponent }       from './projects.component';
 
 const appRoutes: Routes = [
   {
@@ -47,7 +48,11 @@ const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
-  }
+  },
+	{
+	 path: 'projects',
+	 component: ProjectsComponent
+	}
 ];
 
 @NgModule({
@@ -65,7 +70,8 @@ const appRoutes: Routes = [
     AboutComponent,
     BoardComponent,
     SponsorsComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectsComponent
   ]
 })
 export class AppRoutingModule {}
