@@ -10,6 +10,7 @@ import { BoardComponent }         from './board.component';
 import { SponsorsComponent }      from './sponsors.component';
 import { ContactComponent }       from './contact.component'; 
 import { ProjectsComponent }       from './projects.component';
+import { GetInvolvedComponent }   from './get-involved.component';
 
 const appRoutes: Routes = [
   {
@@ -49,10 +50,14 @@ const appRoutes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
-	{
-	 path: 'projects',
-	 component: ProjectsComponent
-	}
+  {
+    path: 'projects',
+    component: ProjectsComponent
+  },
+  {
+    path: 'get-involved',
+    component: GetInvolvedComponent
+  }
 ];
 
 @NgModule({
@@ -71,7 +76,8 @@ const appRoutes: Routes = [
     BoardComponent,
     SponsorsComponent,
     ContactComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    GetInvolvedComponent
   ]
 })
 export class AppRoutingModule {}
