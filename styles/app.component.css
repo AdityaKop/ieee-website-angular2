@@ -7,10 +7,14 @@
 
 .fa {
     color: #009FDA;
+    position: relative;
+    width: 35px;
+    left: .2rem;
+    font-size:2.1rem;
 }
 
-.fa:hover {
-    color: #EEEEEE;
+.li.navCon:hover {
+  color: #EEEEEE;
 }
 
 .a:active {
@@ -25,7 +29,7 @@
 
 .navCon {
     display: inline-block;
-    padding: 10px 15px; 
+    padding: 10px 15px;
 }
 
 #navArea {
@@ -36,27 +40,88 @@
 }
 
 .row {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
-@media screen and (min-width: 360px) {
+@media screen {
     .navCon {
-        padding: 10px 21px; 
-    } 
+        padding: 10px 21px;
+    }
+    /* #navArea {
+
+    } */
+    #navArea {
+        z-index: 5;
+        background-color: #006699;
+        position: fixed;
+        padding: 0;
+    }
+
+    .description {
+      display: none;
+    }
 }
 
 @media screen and (min-width: 601px) {
     .navWrapper {
-        display: inline; 
+        display: inline;
     }
     .navCon {
         display: block;
         padding: 10px 10px;
-        text-align: center; 
+        text-align: center;
+        bottom: 1rem;
     }
     #navArea {
         position: static;
         height: 100vh;
         width: 70px;
     }
+    .navWrapper:hover,nav.navArea.expanded {
+      width:220px;
+      overflow:visible;
+    }
+
+    .navWrapper {
+      background:#006699;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      width:60px;
+      overflow:hidden;
+      -webkit-transition:width .05s linear;
+      transition:width .05s linear;
+      -webkit-transform:translateZ(0) scale(1,1);
+      z-index:1000;
+    }
+
+    .navWrapper li {
+      position:relative;
+      display:block;
+      width:220px;
+    }
+
+    .navWrapper li>a {
+      position:relative;
+      display:table;
+      -webkit-transform:translateZ(0) scale(1,1);
+      -webkit-transition:all .1s linear;
+      transition:all .1s linear;
+
+    }
+
+    .navWrapper .description {
+      position:relative;
+      display:table-cell;
+      vertical-align:middle;
+      width:190px;
+      left: .2rem;
+    }
+
+    .navWrapper li:hover {
+      color:#EEEEEE;
+      background-color:#EEEEEE;
+    }
+
 }

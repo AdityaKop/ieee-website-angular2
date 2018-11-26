@@ -1,46 +1,80 @@
-<div class="row"> 
+<div class="row">
 <div id="navArea" class="col s12 m1 l1">
 	<div class="navWrapper">
-		<div class="navCon">
-			<a [routerLink]="['/home']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-home fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/announcements']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-bullhorn fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/calendar']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-calendar-o fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/board']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-users fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/projects']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-microchip fa-2x"></i>
-			</a></div>
-		<div class="navCon">
-            		<a [routerLink]="['/sponsors']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-briefcase fa-2x">
-           		</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/lab']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-map-o fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/get-involved']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-user-plus fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/contact']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-envelope fa-2x">
-			</i></a></div>
-		<div class="navCon">
-			<a [routerLink]="['/about']" routerLinkActive="active">
-			<i aria-hidden class="fa fa-info-circle fa-2x">
-			</i></a></div>
+    <!-- <a href="#" data-target="navArea" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+		<ul>
+			<li class="navCon">
+				<a [routerLink]="['/home']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-home fa-2x"></i>
+				<div class="description">
+					Home
+				</div>
+			</a>
+			</li>
+			<li class="navCon">
+				<a [routerLink]="['/announcements']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-bullhorn fa-2x"></i>
+				<div class="description">
+					Announcements
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/calendar']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-calendar-o fa-2x"></i>
+				<div class="description">
+					Calendar
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/board']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-users fa-2x"></i>
+				<div class="description">
+					Board
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/projects']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-microchip fa-2x"></i>
+				<div class="description">
+					Projects
+				</div>
+				</a></li>
+			<li class="navCon">
+	      <a [routerLink]="['/sponsors']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-briefcase fa-2x"></i>
+				<div class="description">
+					Sponsors
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/lab']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-map-o fa-2x"></i>
+				<div class="description">
+					Lab Room
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/get-involved']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-user-plus fa-2x"></i>
+				<div class="description">
+					Get Involved
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/contact']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-envelope fa-2x"></i>
+				<div class="description">
+					Contact Us
+				</div>
+				</a></li>
+			<li class="navCon">
+				<a [routerLink]="['/about']" routerLinkActive="active">
+				<i aria-hidden class="fa fa-info-circle fa-2x"></i>
+				<div class="description">
+					About
+				</div>
+				</a></li>
+			</ul>
 	</div>
 </div>
 <div class="bodyDiv">
