@@ -23,7 +23,7 @@
 
 .navWrapper {
     width: 300px;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
 }
 
@@ -43,26 +43,91 @@
     margin-bottom: 0;
 }
 
-@media screen {
+@media screen and (max-width: 450px) {
     .navCon {
         padding: 10px 21px;
+	bottom: 1rem;
     }
-    /* #navArea {
 
-    } */
     #navArea {
         z-index: 5;
         background-color: #006699;
         position: fixed;
         padding: 0;
+        height: 100vh;
+        transition: ease-in-out 400ms;
+        width: 0px;
+        overflow: hidden;
     }
 
-    .description {
-      display: none;
+    .toggleNavbarStyle {
+      width: 185px !important;
+      transition: ease-in-out 600ms !important;
+    }
+
+    #nav-bars {
+      text-align: left;
+      margin: 0;
+      position: absolute;
+      left: 0.1rem;
+      top: 0.6rem;
+    }
+
+    .fa {
+        left: -0.7rem;
+    }
+
+    #mobile-title {
+      text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      margin: auto;
+    }
+
+    .mobile-toggle {
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+      text-align: left;
+      background-color: #006699;
+    }
+
+    .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+      padding: 0 1rem;
+    }
+
+    .navWrapper {
+      background:#006699;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      width:220px;
+      overflow:hidden;
+      z-index:1000;
+    }
+
+    .navWrapper li {
+      position:relative;
+      display:block;
+      width:220px;
+    }
+
+    .navWrapper .description {
+      position:relative;
+      display:table-cell;
+      vertical-align:middle;
+      width:120px;
+      left: 1rem;
+      text-align: left;
+    }
+
+    .navWrapper li>a {
+      position:relative;
+      display:table;
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 451px) {
     .navWrapper {
         display: inline;
     }
@@ -116,7 +181,9 @@
       display:table-cell;
       vertical-align:middle;
       width:190px;
-      left: .2rem;
+      left: 3rem;
+      text-align: left;
+      font-size: 1.07rem;
     }
 
     .navWrapper li:hover {
@@ -124,4 +191,7 @@
       background-color:#EEEEEE;
     }
 
+    .mobile-toggle {
+      display: none;
+    }
 }

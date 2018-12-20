@@ -55,7 +55,7 @@ body {
 
 .logo-wrapper {
   display: block;
-  z-index: 7;
+  z-index: 4;
   position: absolute;
   width: 260px;
   top: 20%;

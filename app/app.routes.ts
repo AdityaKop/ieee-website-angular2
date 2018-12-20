@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent }          from './home.component';
-import { AnnouncementsComponent } from './announcements.component';
+import { EventsComponent } 	  from './events.component';
 import { CalendarComponent }      from './calendar.component';
 import { LabComponent }           from './lab.component';
 import { AboutComponent }         from './about.component';
 import { BoardComponent }         from './board.component';
 import { SponsorsComponent }      from './sponsors.component';
-import { ContactComponent }       from './contact.component'; 
-import { ProjectsComponent }       from './projects.component';
+import { ContactComponent }       from './contact.component';
+import { ProjectsComponent }      from './projects.component';
 import { GetInvolvedComponent }   from './get-involved.component';
 
 const appRoutes: Routes = [
@@ -23,8 +23,8 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'announcements',
-    component: AnnouncementsComponent
+    path: 'events',
+    component: EventsComponent
   },
   {
     path: 'calendar',
@@ -55,7 +55,7 @@ const appRoutes: Routes = [
     component: ProjectsComponent
   },
   {
-    path: 'get-involved',
+    path:'get-involved',
     component: GetInvolvedComponent
   }
 ];
@@ -69,7 +69,7 @@ const appRoutes: Routes = [
   ],
   declarations: [
     HomeComponent,
-    AnnouncementsComponent,
+    EventsComponent,
     CalendarComponent,
     LabComponent,
     AboutComponent,

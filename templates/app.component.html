@@ -1,9 +1,13 @@
 <div class="row">
-<div id="navArea" class="col s12 m1 l1">
+<div class="mobile-toggle">
+		<i aria-hidden class="fa fa-bars fa-2x" id="nav-bars"(click)="ontoggleNavbar()"></i>
+		<p id="mobile-title"><b>IEEE at UCI</b></p>
+</div>
+<div id="navArea" class="col s12 m1 l1" [ngClass]="{'toggleNavbarStyle':toggleNavbar === true}">
 	<div class="navWrapper">
-    <!-- <a href="#" data-target="navArea" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-		<ul>
-			<li class="navCon">
+
+		<ul id="nav-mobile">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/home']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-home fa-2x"></i>
 				<div class="description">
@@ -11,63 +15,63 @@
 				</div>
 			</a>
 			</li>
-			<li class="navCon">
-				<a [routerLink]="['/announcements']" routerLinkActive="active">
+			<li class="navCon" (click)="ontoggleNavbar()">
+				<a [routerLink]="['/events']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-bullhorn fa-2x"></i>
 				<div class="description">
-					Announcements
+					Events
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/calendar']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-calendar-o fa-2x"></i>
 				<div class="description">
 					Calendar
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/board']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-users fa-2x"></i>
 				<div class="description">
 					Board
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/projects']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-microchip fa-2x"></i>
 				<div class="description">
 					Projects
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 	      <a [routerLink]="['/sponsors']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-briefcase fa-2x"></i>
 				<div class="description">
 					Sponsors
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/lab']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-map-o fa-2x"></i>
 				<div class="description">
 					Lab Room
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/get-involved']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-user-plus fa-2x"></i>
 				<div class="description">
 					Get Involved
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/contact']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-envelope fa-2x"></i>
 				<div class="description">
 					Contact Us
 				</div>
 				</a></li>
-			<li class="navCon">
+			<li class="navCon" (click)="ontoggleNavbar()">
 				<a [routerLink]="['/about']" routerLinkActive="active">
 				<i aria-hidden class="fa fa-info-circle fa-2x"></i>
 				<div class="description">
