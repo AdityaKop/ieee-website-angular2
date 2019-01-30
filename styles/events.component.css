@@ -75,3 +75,7 @@ h3 {
 .col s12 l6 {
   column-gap: 20rem;
 }
+
+.table-of-contents:hover {
+  cursor: pointer;
+}
